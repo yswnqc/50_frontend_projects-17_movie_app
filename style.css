@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+
+:root {
+  --color1: #22254b;
+  --color2: #373b69;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color1);
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+.prev-proj {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  color: lightgray;
+  cursor: pointer;
+  z-index: 1;
+}
+.next-proj {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  color: lightgray;
+  cursor: pointer;
+  z-index: 1;
+}
+.prev-proj:hover,
+.next-proj:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+header {
+  background-color: var(--color2);
+  padding: 1rem;
+  display: flex;
+  justify-content: end;
+}
+
+.search {
+  background-color: transparent;
+  border: 2px solid var(--color1);
+  border-radius: 50px;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  color: white;
+}
+
+.search::placeholder {
+  color: #7378c5;
+}
+
+.search:focus {
+  outline: none;
+  background-color: var(--color1);
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movie {
+  width: 300px;
+  margin: 1rem;
+  background-color: var(--color2);
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+.movie img {
+  width: 100%;
+}
+
+.movie-info {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem 1rem;
+}
+
+.movie-info h3 {
+  margin: 0;
+}
+
+.movie-info span {
+  background-color: var(--color1);
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.green {
+  color: lightgreen;
+}
+
+.orange {
+  color: orange;
+}
+
+.red {
+  color: red;
+}
+
+.overview {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 2rem;
+  position: absolute;
+  bottom: 0;
+  max-height: 100%;
+  transform: translateY(100%);
+  transition: 0.3s ease;
+}
+
+.movie:hover .overview {
+  transform: translateY(0);
+}
+
+.template {
+  display: none;
+}
