@@ -6,11 +6,11 @@
 
 ### Make a little difference
 
-- Editing...
+- Display grid auto-fit
 
 ### Need improve
 
-- mobile responsive
+- Editing...
 
 From [50projects50days](https://50projects50days.com).
 
